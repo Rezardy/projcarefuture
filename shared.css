@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* Navbar CSS */
+header {
+    top: 0;
+    position: sticky;
+}
+
+nav {
+    background-color: #008148;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 20px; 
+}
+
+.nav-container {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-items {
+    
+}
+
+.nav-link {
+    padding: 20px 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: #057350;
+}
+
+#website-identity {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #554348;
+    color: #EFF6E0;
+    font-family: sans-serif;
+    font-size: larger;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#footer-text {
+    margin-left: 40px;
+}
