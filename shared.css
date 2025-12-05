@@ -22,6 +22,11 @@ nav {
     padding: 10px 20px; 
 }
 
+#logo {
+    background-color: white;
+    border-radius: 100%;
+}
+
 #navMenu {
     display: flex;
     list-style: none;

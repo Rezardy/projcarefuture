@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NamePending</title>
+    <title>Foresta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="shared.css">
 </head>
@@ -15,10 +15,10 @@
         <nav id="navbar-wrapper">
             <a id="website-identity" class="nav-container" href="index.html">
                 <div id="website-logo">
-                    <img id="logo" src="/asset/coffee.png" alt="icon placeholder" width="20px" height="20px">
+                    <img id="logo" src="asset/icon.png" alt="icon placeholder" width="30px" height="30px">
                 </div>
                 <div id="website-name">
-                    <h3>Nama website</h3>
+                    <h3>Foresta</h3>
                 </div>
             </a>
             <div class="burger-menu" id="burgerMenu">
@@ -42,32 +42,90 @@
             </ul>
         </nav>
     </header>
-    <div class="forestbg">
-        <div class="row panel">
-            <div class="col">
-                <h1>(Penjelasan)</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequuntur quidem, dicta
-                    voluptate voluptatibus, quam odio quasi aut perferendis qui, exercitationem sint omnis sit
-                    temporibus veniam itaque harum reprehenderit autem.</p>
+    <main>
+        <section class="hero" role="region" aria-label="Hero section">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1 class="hero-title">Foresta</h1>
+                    <p class="hero-slogan">Bersatu untuk Hutan Indonesia.</p>
+                </div>
+                <div class="hero-logo">
+                    <img src="asset/icon.png" alt="Foresta logo" width="200" height="200">
+                </div>
             </div>
-            <div class="col invis"><img src="asset/coffee.png" alt="" width="350px" height="300px"></div>
-            <div class="col">
-                <img src="asset/coffee.png" alt="" width="350px" height="300px">
+        </section>
+        <section class="about" id="who-we-are" role="region" aria-label="Siapa Kami">
+            <div class="about-inner">
+                <div class="about-content">
+                    <h2 class="about-title">Siapa Kami</h2>
+                    <p class="about-lead">Foresta adalah inisiatif komunitas yang memiliki tujuan meningkatkan visibilitas aksi konservasi hutan di Indonesia</p>
+                    <p class="about-text">Kami melakukan sosialisasi, donasi, serta memberikan berita terkini terkait ekosistem hutan di Indonesia. Bergabunglah dengan komunitas kami untuk membawa perubahan!</p>
+                    <div class="about-cta">
+                        <a class="btn btn-primary" href="about.html">Pelajari Lebih Lanjut</a>
+                        <a class="btn btn-outline" href="news.html">Berita & Kegiatan</a>
+                    </div>
+                </div>
+
+                <aside class="about-cards" aria-hidden="false">
+                    <article class="card">
+                        <h3>Visi</h3>
+                        <p>Menayangkan dan menjaga alam Indonesia.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Misi</h3>
+                        <p>Melindungi, memulihkan, dan menginspirasi aksi nyata untuk hutan.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Nilai</h3>
+                        <p>Kepedulian, Edukasi, dan Transparansi</p>
+                    </article>
+                </aside>
             </div>
-        </div>
-    </div>
-    <div class="forestbg" id="charity">
-        <div class="row panel">
-            <div class="col">
-                <img src="asset/map.png" alt="" height="200px">
+        </section>
+        <section class="feature" role="region" aria-label="Fitur Utama">
+            <div class="feature-inner">
+                <h2 class="feature-title">Fitur Foresta</h2>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <img src="asset/newspaper-solid-full.svg" alt="Icon reboisasi" class="feature-icon" width="56" height="56">
+                        <h3 class="feature-card-title">Berita & Artikel</h3>
+                        <p class="feature-card-text">Lihat berita terkini mengenai hutan di Indonesia.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="asset/book-solid-full.svg" alt="Icon edukasi" class="feature-icon" width="56" height="56">
+                        <h3 class="feature-card-title">Pusat Informasi</h3>
+                        <p class="feature-card-text">Akses berbagai informasi seputar konservasi hutan.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="asset/map-solid-full.svg" alt="Icon monitoring" class="feature-icon" width="56" height="56">
+                        <h3 class="feature-card-title">Heatmap persebaran hutan</h3>
+                        <p class="feature-card-text">Pemantauan kesehatan hutan secara realtime dengan bantuan teknologi.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="asset/circle-dollar-to-slot-solid-full.svg" alt="Icon donasi" class="feature-icon" width="56" height="56">
+                        <h3 class="feature-card-title">Donasi & Dukungan</h3>
+                        <p class="feature-card-text">Saluran donasi untuk mendukung berbagai aksi perlindungan hutan.</p>
+                    </article>
+                </div>
             </div>
-            <div class="col invis"><img src="asset/coffee.png" alt="" width="200px" height="300px"></div>
-            <div class="col">
-                <h1>Donate to a Forest</h1>
-                <p>(Info)</p>
+        </section>
+        <section class="donation" role="region" aria-label="Donasi">
+            <div class="donation-overlay"></div>
+            <div class="donation-inner">
+                <div class="donation-content">
+                    <h2 class="donation-title">Dukung Aksi Konservasi Hutan</h2>
+                    <p class="donation-text">Setiap kontribusi Anda membantu melindungi dan memulihkan hutan Indonesia. Mari bersama-sama ciptakan dampak nyata untuk generasi mendatang.</p>
+                    <a class="btn btn-donation" href="#donate">Berdonasi Sekarang</a>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-text">Made with love by kelompok 4 literasi digital</p>
+    </footer>
 </body>
 
 </html>
