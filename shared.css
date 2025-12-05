@@ -9,6 +9,7 @@ html, body {
 header {
     top: 0;
     position: sticky;
+    z-index: 100;
 }
 
 nav {
@@ -21,14 +22,10 @@ nav {
     padding: 10px 20px; 
 }
 
-.nav-container {
+#navMenu {
     display: flex;
     list-style: none;
 
-}
-
-.nav-items {
-    
 }
 
 .nav-link {
@@ -44,10 +41,75 @@ nav {
 }
 
 #website-identity {
+    display: flex;
+    align-items: center;
     font-family: sans-serif;
     text-decoration: none;
     color: white;
     gap: 20px;
+}
+
+/* Burger Menu Button */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    #navMenu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #008148;
+        flex-direction: column;
+        padding: 20px 0;
+        display: none !important;
+        list-style: none;
+        margin: 0;
+    }
+
+    #navMenu.active {
+        display: flex !important;
+    }
+
+    .nav-items {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Burger menu animation - X shape when active */
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
 }
 
 /* Footer */

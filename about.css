@@ -1,0 +1,77 @@
+html, body {
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse at center, rgba(0,0,0,0) 30%, rgba(0,0,0,0.55) 100%),
+      linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
+    backdrop-filter: none;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 4px 14px rgba(0,0,0,0.6);
+}
+
+#about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.visi {
+    margin: 50px 8vw;
+}
+
+#visi-title {
+    font-family: Courier;
+    font-size: 24px;
+    font-weight: 50;
+}
+
+#visi-text {
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+#about-description {
+    background-color: #FAF3DD;
+    font-size: 15px;
+    padding: 50px 50px;
+}
+
+@media (max-width: 768px) {
+    .hero { height: 200px; }
+    .hero-content h1 { font-size: 32px; }
+    #about-us { grid-template-columns: none; grid-template-rows: auto 1fr; }
+    .visi { text-align: center; }
+    #visi-text { font-size: 32px; }
+}

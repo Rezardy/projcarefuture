@@ -1,0 +1,119 @@
+html, body {
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+
+.page-wrap {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    position: relative;
+    padding-right: 0;
+   
+}
+
+.content {
+    max-width: 820px;
+    margin: 0;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.main-article .hero {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    
+}
+
+.main-article h1 {
+    font-size: 32px;
+    margin: 20px 0 8px;
+    line-height: 1.2;
+}
+
+.main-article h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.main-article .meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.other-news {
+    position: fixed;
+    right: 100px;
+    top: 100px; 
+    width: 320px;
+    max-height: calc(100vh - 160px);
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 18px;
+    z-index: 50;
+}
+
+.other-news h3 {
+    margin: 0 0 25px;
+    font-size: 18px;
+}
+
+.other-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.other-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.other-list img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.other-list a {
+    display: inline-block;
+    color: #0a66c2;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.other-list .snippet {
+    font-size: 13px;
+    color: #666;
+}
+
+@media (max-width: 900px) {
+    .page-wrap {
+        padding-right: 20px;
+    }
+    .other-news {
+        position: static;
+        width: 85vw;
+        max-height: none;
+        margin-top: 30px;
+        padding: 10px 10px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .content { padding: 0; }
+    .main-article h1 { font-size: 26px; }
+    .main-article .hero { height: 360px; }
+}
